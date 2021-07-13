@@ -51,8 +51,8 @@ class App extends React.Component {
         <header className="App-header">
           <h1>Counter: {this.state.counter}</h1>
           <button onClick={this.clickHandler}>Click me 👇</button>
-          <h1>{this.state.liked ? 'I like it 👍' : 'I do not yet like it'}</h1>
-          <button onClick={this.likeHandler}>Like</button>
+          <h1>{this.state.liked ? 'I like it 👍' : 'I do not yet like it 👎'}</h1>
+          <button onClick={this.likeHandler}>{this.state.liked ? 'Unlike' : 'Like'}i</button>
           {/* <button onClick={() => console.log('click me as well')}>Click me as well 👇</button> */}
         </header>
       </div>
